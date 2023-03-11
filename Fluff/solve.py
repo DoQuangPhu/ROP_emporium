@@ -5,7 +5,7 @@ input()
 offset=0x28
 pop_rdi=0x00000000004006a3
 pop_rbp=0x0000000000400588
-mov=0x0000000000400606   #mov dword ptr [rbp + 0x48], edx; mov ebp, esp; call 0x500; mov eax, 0; pop rbp; ret;
+mov=0x0000000000400606   #mov dword ptr [rbp + 0x48], edx; mov ebp, esp; call 0x400500; mov eax, 0; pop rbp; ret;
 pop_rdx=0x000000000040062a #pop rdx; pop rcx; add rcx, 0x3ef2; bextr rbx, rcx, rdx; ret;
 print_file=0x400510
 rw_address=0x00000000601500
